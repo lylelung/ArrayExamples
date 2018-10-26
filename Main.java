@@ -247,8 +247,23 @@ class Main
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
-        
-        
+        System.out.println("Task 11");
+       for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
+            
+        int ar2half = ar2.length/2;
+        System.out.println(ar2half);
+        int task11Temp;
+        for (int i=0 ; i<ar2half ; i++)
+        {
+            task11Temp = ar2[i];
+            System.out.println(" "+i+":"+(ar2.length-i));
+            ar2[i] = ar2[ar2.length-1-i];
+            ar2[ar2.length-1-i]=task11Temp;
+        }
+               
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
         /*
          * Task 12: 
          * Create an array of Strings called ar5.
@@ -273,7 +288,7 @@ class Main
          *  Count how many words have more than 5 letters.
          */
         
- String[] ar5= new String[15];     
+ String[] ar5= new String[16];     
       ar5[0]="four";
       ar5[1]="score";
       ar5[2]="and";
@@ -290,7 +305,14 @@ class Main
       ar5[13]="a"; 
       ar5[14]="new";
       ar5[15]="nation";
-      System.out.println("4 words");
+
+      int countdracula = 0;
+      for (int i=0 ; i<ar5.length ; i++)
+ {
+     if (ar5[i].length()>5);
+     countdracula++;
+    }
+    System.out.println("Task 5 has " + countdracula + " words that have more than 5 letters");  
      
    //didn't finish
 
